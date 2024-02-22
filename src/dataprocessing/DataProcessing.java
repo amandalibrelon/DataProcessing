@@ -4,17 +4,36 @@
  */
 package dataprocessing;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
  *
  * @author amand
  */
 public class DataProcessing {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    /* 
+    given a file
+    read all the data   
+    validate it 
+    output data
+    */
+    
+    public static void main(String[] args) throws FileNotFoundException, IOException {
+        
+        String filename = "file.txt";
+        BufferedReader br = new BufferedReader(new FileReader(filename));
+        
+        String line;
+        while ( (line=br.readLine()) != null ) {
+            //validation
+            
+            
+        }
+       //output
     }
     
 }
